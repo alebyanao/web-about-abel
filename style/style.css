@@ -1,0 +1,133 @@
+/* style.css */
+
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, Poppins;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;  
+    padding: 20px;
+}
+
+/* Background untuk paragraf */
+p {
+  background-color: #f2f2f2; /* Warna latar belakang abu-abu muda */
+  color: #333;               /* Warna teks abu-abu tua */
+  padding: 20px;             /* Padding di sekitar teks paragraf */
+  border-radius: 5px;        /* Sudut melengkung pada paragraf */
+  line-height: 1.6;          /* Jarak antar baris */
+}
+
+/* Header styling */
+header {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Main container styling */
+.main-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-container h1 {
+    color: #333;
+}
+
+/* Image styling */
+header img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 80%;
+    max-width: 170px;
+    height: auto;
+}
+
+/* Contact and address styling */
+address {
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+address {
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+strong {
+    color: #333;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Link styling */
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        display: block;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding-left: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+}
